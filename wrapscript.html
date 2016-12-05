@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- this is a very strained use of javascript.
+     Do not do this under sane circumstances.
+  Monir Mamoun 201-486-2974
+  -->
+
+<script id='pharmabroscript' type='text/javascript'>
+function pharmaFunc (){
+    console.log('welcome to the pharmaFunc')
+}
+</script>
+<script type='text/javascript'>
+var funnyfunction = $('#pharmabroscript').html();
+console.log('content of funnyfunction: '+funnyfunction);
+console.log('run funnyfunction: ');
+eval('('+funnyfunction+')()')
+</script>
+
+
+</body>
+</html>
